@@ -7,7 +7,7 @@ export const environment = {
 };
 // export const apiUrl = '//localhost:8080/api';
 // https://toshoppone.herokuapp.com/api/product
- export const apiUrl = '//toshoppone.herokuapp.com/api';
+ export const apiUrl = 'https://toshoppone.herokuapp.com/api';
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
