@@ -16,7 +16,9 @@
 
         <!--Photo-->
         <div class="align-middle">
-          <img height="100px" [src]="product.productimage">
+         <!-- <img height="100px" [src]="product.productimage">-->
+          <img height="100px" *ngIf=" !product.productIcon " [src]="product.productimage">
+          <img height="100px" *ngIf=" product.productIcon " [src]="product.productIcon">
         </div>
 
       <div class="form-group" >
@@ -46,9 +48,10 @@
                 <option [ngValue]=0>Books</option>
                 <option [ngValue]=1>Food</option>
                 <option [ngValue]=2>Clothes</option>
-              <option [ngValue]=3>Drink</option>
-              <option [ngValue]=4>Hi-Tech</option>
-              <option [ngValue]=5>Home</option>
+                <option [ngValue]=3>Drink</option>
+                <option [ngValue]=4>Hi-Tech</option>
+                <option [ngValue]=5>Home</option>
+
             </select>
         </div>
 
